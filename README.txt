@@ -20,3 +20,10 @@ styles/
   recipes.css     — receptgrid och kort
   contact.css     — kontaktformulär
   footer.css      — footer
+
+
+## Struktur & tanke
+Sidan är byggd som en one-page layout där varje sektion 
+behandlas som en egen komponent med separata CSS-filer. 
+Strukturen är medvetet förberedd för React, där samma 
+uppdelning används fast som JSX-komponenter.
