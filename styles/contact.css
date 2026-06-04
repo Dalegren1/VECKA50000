@@ -1,0 +1,39 @@
+/* ===========================
+   Contact form
+=========================== */
+.contact-form {
+  background-color: var(--color-bg);
+  padding: var(--section-padding) 0;
+}
+
+.contact-form .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.contact-form__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.contact-form__form {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+.contact-form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+input, textarea {
+  padding: 1rem;
+}

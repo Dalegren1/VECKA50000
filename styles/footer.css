@@ -1,0 +1,25 @@
+/* ===========================
+   Footer
+=========================== */
+
+.footer {
+  background-color: var(--color-dark);
+  color: var(--color-bg);
+  padding: 3.75rem var(--gap);
+}
+
+.footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__copy {
+  font-size: 0.9rem;
+  /* TODO: WCAG-risk — opacity 0.5 på 0.9rem text */
+  color: var(--color-on-dark-50);
+}
+
+.footer .logo img {
+  filter: brightness(0) invert(1);
+}

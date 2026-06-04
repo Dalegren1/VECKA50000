@@ -1,0 +1,113 @@
+/* ===========================
+   Recipes (grid)
+=========================== */
+
+.recipes {
+  background: var(--color-recipes-bg);
+  padding: var(--section-padding) var(--gap);
+}
+
+.recipes__title {
+  color: var(--color-bg)
+}
+
+.recipes__header {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.recipes__header p {
+  color: var(--color-on-dark-60);
+  font-size: 1rem;
+}
+
+.recipes .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px, 1fr));
+  gap: var(--gap);
+}
+
+/* ===========================
+   Cards
+=========================== */
+
+.card {
+  background-color: var(--color-dark-bg);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card--featured {
+  grid-column: 1 / -1;
+  flex-wrap: wrap;
+  flex-direction: row;
+  min-height: 380px;
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  flex-shrink: 0;
+}
+
+
+.card--featured img {
+  flex: 1 1 300px;
+  min-width: 300px;
+  width: clamp(200px, 45vw, 660px);
+  height: auto;
+  aspect-ratio: unset;
+}
+
+.card--featured .card__content {
+  flex: 1 1 300px;
+  min-width: 300px;
+}
+
+.card__content {
+  padding: var(--gap);
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  justify-content: center;
+}
+
+.card__tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-bg);
+  /* TODO: WCAG-risk — opacity: 0.5 på liten text (0.75rem), verifiera kontrastkvot ≥ 4.5:1 */
+  opacity: 0.5;
+}
+
+.card__title {
+  color: var(--color-bg);
+}
+
+.card__desc {
+  color: var(--color-on-dark-60);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.card__link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-bg);
+  margin-top: 0.5rem;
+  transition: opacity 0.2s ease;
+  align-self: flex-start;
+}
+
+.card__link:hover {
+  opacity: 0.6;
+}

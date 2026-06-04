@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pannkakor</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/main.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap"
       rel="stylesheet"
@@ -79,14 +79,14 @@
       <section class="hero" id="hero">
         <div class="container">
           <div class="hero__text">
-            <p class="hero__label">Recept</p>
+            <span class="hero__label">Recept</span>
             <h1>Pannkakor som sitter</h1>
             <p class="hero__desc">
               Klassiska, fluffiga och krispiga i kanterna. Här samlar vi allt du
               behöver veta om pannkakor — från grundreceptet till guldigare
               varianter.
             </p>
-            <a href="recept.html" class="btn">Till gamla receptsidan →</a>
+            <a href="pages/recept.html" class="btn">Till gamla receptsidan →</a>
           </div>
           <div class="hero__image">
             <img
@@ -106,7 +106,7 @@
       <section class="recipes" id="recipes">
         <div class="container">
           <div class="recipes__header">
-            <h2>Alla recept</h2>
+            <h2 class="recipes__title">Alla recept</h2>
             <p>Välj ett recept och kom igång.</p>
           </div>
 
@@ -124,7 +124,7 @@
                 Det enkla grundreceptet — tunt smör, lagom sött och perfekt med
                 jordgubbssylt.
               </p>
-              <a href="recept.html" class="card__link">Läs recept →</a>
+              <a href="pages/recept.html" class="card__link">Läs recept →</a>
             </div>
           </article>
 
@@ -219,7 +219,7 @@
        Footer
   ========================= -->
       <footer class="footer" id="footer">
-        <div class="container footer__inner">
+        <div class="footer__inner">
           <a href="#" class="logo" aria-label="Hem">
             <img src="img/Icon.svg" alt="" width="32" height="32" />
           </a>
@@ -233,7 +233,7 @@
                 <a href="#recipes" class="nav__link nav__link--light">Recept</a>
               </li>
               <li>
-                <a href="recept.html" class="nav__link nav__link--light">Gamla receptsidan</a>
+                <a href="pages/recept.html" class="nav__link nav__link--light">Gamla receptsidan</a>
               </li>
             </ul>
           </nav>

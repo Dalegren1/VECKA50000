@@ -1,0 +1,22 @@
+/* ===========================
+   Root / tokens
+=========================== */
+
+:root {
+  --color-bg:          oklch(98.2% 0.005 98);
+  --color-dark:        oklch(39.1% 0.008 320);
+  --color-text:        oklch(42.3% 0.016 331);
+  --color-dark-bg:     oklch(17.8% 0 0);
+  --color-recipes-bg:  oklch(21.8% 0 0);
+  --color-on-dark-60:  oklch(92.1% 0.006 108 / 0.6);
+  --color-on-dark-50:  oklch(92.1% 0.006 108 / 0.5);
+
+  --font-heading-xl: clamp(2rem, 5vw, 3.5rem);
+  --font-heading-md: clamp(1.25rem, 3vw, 2rem);
+  --font-body:       1.1rem;
+  --font-nav:        1.1rem;
+
+  --radius:          0.25rem;  /* 4px */
+  --gap:             1.5rem;   /* 24px */
+  --section-padding: 7.5rem;   /* 120px — hero & recipes vertical padding */
+}

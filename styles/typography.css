@@ -1,0 +1,41 @@
+/* ===========================
+   Container (gemensam)
+=========================== */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--gap);
+}
+
+/* ===========================
+   Typography (gemensam)
+=========================== */
+h1 {
+  font-size: var(--font-heading-xl);
+  font-weight: 600;
+  color: var(--color-dark);
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: var(--font-heading-md);
+  font-weight: 600;
+  color: var(--color-dark-bg);
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-bg);
+}
+
+p {
+  font-size: var(--font-body);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+input, textarea, button, label {
+  font-family: inherit;
+}

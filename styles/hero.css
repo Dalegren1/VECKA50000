@@ -1,0 +1,68 @@
+/* ===========================
+   Hero
+=========================== */
+
+.hero {
+  background-color: var(--color-bg);
+  padding: var(--section-padding) var(--gap);
+}
+
+.hero .container {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem 5rem;
+  flex-wrap: wrap;
+}
+
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+.hero__text,
+.hero__image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero__image img {
+  width: clamp(200px,80vw,480px);
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+  object-fit: cover;
+}
+
+.hero__label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text);
+  /* TODO: WCAG-risk — opacity: 0.6 på liten text (0.85rem) mot --color-bg, sannolikt under 4.5:1 */
+  opacity: 0.6;
+}
+
+.hero__desc {
+  max-width: 27.5rem;
+}
+
+/* Button */
+.btn, .contact-form__btn {
+  display: inline-block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  background-color: var(--color-dark);
+  color: var(--color-bg);
+  padding: 1rem 2rem;
+  border-radius: var(--radius);
+  transition: opacity 0.2s ease;
+}
+
+.btn:hover, .contact-form__btn:hover {
+  opacity: 0.8;
+}
