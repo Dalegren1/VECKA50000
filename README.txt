@@ -14,7 +14,7 @@ En receptsida byggd med vanilla HTML och CSS.
 styles/
   reset.css       — reset
   tokens.css      — CSS-variabler
-  typography.css  — typografi och container
+  global.css      — typografi och container
   header.css      — header, nav, social
   hero.css        — hero-sektion
   recipes.css     — receptgrid och kort

@@ -1,6 +1,6 @@
 @import "reset.css";
 @import "tokens.css";
-@import "typography.css";
+@import "global.css";
 @import "header.css";
 @import "hero.css";
 @import "recipes.css";
