@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pannkakor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+  <!-- ========================
+       Header
+  ========================= -->
+    <header class="header">
+      <a href="#" class="logo" aria-label="Hem">
+        <img src="img/Icon.svg" alt="" width="32" height="32" />
+      </a>
+
+      <nav class="nav" aria-label="Huvudnavigation">
+        <ul class="nav__list">
+          <li><a href="#hero" class="nav__link">Hem</a></li>
+          <li><a href="#recipes" class="nav__link">Recept</a></li>
+          <li><a href="#contact-form" class="nav__link">Kontakta oss</a></li>
+        </ul>
+      </nav>
+
+      <nav class="social" aria-label="sociala medier">
+        <a
+          href="https://facebook.com"
+          class="social__link"
+          aria-label="Facebook"
+          target="_blank"
+          rel="noopener"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+          >
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path
+              fill="currentColor"
+              d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95"
+            />
+          </svg>
+        </a>
+
+        <a
+          href="https://instagram.com"
+          class="social__link"
+          aria-label="Instagram"
+          target="_blank"
+          rel="noopener"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+          >
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path
+              fill="currentColor"
+              d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"
+            />
+          </svg>
+        </a>
+      </nav>
+    </header>
+
+  <!-- ========================
+       Hero Flexbox
+  ========================= -->
+    <main>
+      <section class="hero" id="hero">
+        <div class="container">
+          <div class="hero__text">
+            <p class="hero__label">Recept</p>
+            <h1>Pannkakor som sitter</h1>
+            <p class="hero__desc">
+              Klassiska, fluffiga och krispiga i kanterna. Här samlar vi allt du
+              behöver veta om pannkakor — från grundreceptet till guldigare
+              varianter.
+            </p>
+            <a href="recept.html" class="btn">Till gamla receptsidan →</a>
+          </div>
+          <div class="hero__image">
+            <img
+              src="https://images.unsplash.com/photo-1554230095-49b8c83f10e3?q=80&w=1588&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="En trave gyllenbruna pannkakor"
+              width="480"
+              height="480"
+              loading="eager"
+            />
+          </div>
+        </div>
+      </section>
+
+  <!-- ========================
+       Recipes Grid 
+  ========================= -->
+      <section class="recipes" id="recipes">
+        <div class="container">
+          <div class="recipes__header">
+            <h2>Alla recept</h2>
+            <p>Välj ett recept och kom igång.</p>
+          </div>
+
+          <!-- Featured card -->
+          <article class="card card--featured">
+            <img
+              src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?w=1200&auto=format&fit=crop&q=80"
+              alt="Klassiska svenska pannkakor med sylt och grädde"
+              loading="lazy"
+            />
+            <div class="card__content">
+              <span class="card__tag">Favorit</span>
+              <h3 class="card__title">Klassiska svenska pannkakor</h3>
+              <p class="card__desc">
+                Det enkla grundreceptet — tunt smör, lagom sött och perfekt med
+                jordgubbssylt.
+              </p>
+              <a href="recept.html" class="card__link">Läs recept →</a>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card">
+            <img
+              src="https://images.unsplash.com/photo-1555813456-94a3dd418cd3?"
+              alt="Amerikanska pannkakor"
+              loading="lazy"
+            />
+            <div class="card__content">
+              <h3 class="card__title">Amerikanska pannkakor</h3>
+              <p class="card__desc">
+                Tjocka, fluffiga och serverade med lönnsirap.
+              </p>
+              <a href="#" class="card__link">Läs recept →</a>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card">
+            <img
+              src="https://images.unsplash.com/photo-1588467850695-a898367ce465?"
+              alt="Pannkakor med citron"
+              loading="lazy"
+            />
+            <div class="card__content">
+              <h3 class="card__title">Citron & socker</h3>
+              <p class="card__desc">
+                En brittisk klassiker — tunn pannkaka, pressat citron och
+                strösocker.
+              </p>
+              <a href="#" class="card__link">Läs recept →</a>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="card">
+            <img
+              src="https://images.unsplash.com/photo-1630362137311-ca837e790e47?"
+              alt="Pannkakor med bär"
+              loading="lazy"
+            />
+            <div class="card__content">
+              <h3 class="card__title">Sommarbär</h3>
+              <p class="card__desc">
+                Färska hallon och blåbär direkt i smeten — ger naturlig färg och
+                smak.
+              </p>
+              <a href="#" class="card__link">Läs recept →</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+  <!-- ========================
+       Contact form
+  ========================= -->
+      <section class="contact-form" id="contact-form">
+        <div class="container">
+      
+          <div class="contact-form__header">
+            <h2>Kontakta oss</h2>
+            <p>Fyll i formuläret så hör vi av oss.</p>
+          </div>
+      
+          <form class="contact-form__form">
+      
+            <div class="contact-form__group">
+              <label for="name">Namn</label>
+              <input type="text" id="name" name="name" placeholder="Ditt namn" />
+            </div>
+      
+            <div class="contact-form__group">
+              <label for="email">E-post</label>
+              <input type="email" id="email" name="email" placeholder="din@email.com" />
+            </div>
+      
+            <div class="contact-form__group">
+              <label for="message">Meddelande</label>
+              <textarea id="message" name="message" placeholder="Ditt meddelande..."></textarea>
+            </div>
+      
+            <button type="submit" class="contact-form__btn">Skicka</button>
+      
+          </form>
+      
+        </div>
+      </section>
+</main>
+  <!-- ========================
+       Footer
+  ========================= -->
+      <footer class="footer" id="footer">
+        <div class="container footer__inner">
+          <a href="#" class="logo" aria-label="Hem">
+            <img src="img/Icon.svg" alt="" width="32" height="32" />
+          </a>
+          <p class="footer__copy">© 2025 Pannkakor. Byggt av David.</p>
+          <nav class="nav" aria-label="Footernavigation">
+            <ul class="nav__list">
+              <li>
+                <a href="#hero" class="nav__link nav__link--light">Hem</a>
+              </li>
+              <li>
+                <a href="#recipes" class="nav__link nav__link--light">Recept</a>
+              </li>
+              <li>
+                <a href="recept.html" class="nav__link nav__link--light">Gamla receptsidan</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+  </body>
+</html>

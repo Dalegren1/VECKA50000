@@ -1,0 +1,177 @@
+/* ================================
+   RESET
+   ================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+img, picture, svg, video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ================================
+   :ROOT
+   ================================ */
+
+:root {
+    /* Typografisk skala - Minor Third (×1.25) */
+    --text-sm: 0.8rem;
+    --text-base: 1rem;
+    --text-md: 1.25rem;
+    --text-lg: 1.563rem;
+    --text-xl: 1.953rem;
+    --text-2xl: 2.441rem;
+
+    /* Färger */
+    --color-primary: #A10000;
+    --color-background: #FCFCFC;
+    --color-background-body: #FEF5E4;
+    --color-background-subtle: #EBEBEB;
+    --color-placeholder: #D9D9D9;
+
+    /* Spacing */
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-2xl: 3rem;
+    --space-3xl: 4rem;
+}
+
+/* ================================
+   TYPOGRAFI & LAYOUT
+   ================================ */
+
+body {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    background-color: var(--color-background-body);
+    display: flex;
+    justify-content: center;
+    padding-bottom: var(--space-3xl); 
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Bitter", serif;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+.wrapper {
+    background: var(--color-background);
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ================================
+   TILLGÄNGLIGHET
+   ================================ */
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+}
+
+.skip-link:focus {
+    left: var(--space-md);
+    top: var(--space-md);
+}
+
+/* ================================
+   KOMPONENTER
+   ================================ */
+
+.herobild {
+   object-fit: cover;
+   height: 500px;
+   min-width: 100%;
+}
+
+.herobild + figcaption {
+    display: none;
+}
+
+/* Receptkort */
+.receptkort {
+    display: flex;
+    flex-direction: column;
+    padding:var(--space-2xl) var(--space-2xl) var(--space-3xl);
+    gap: var(--space-lg);
+    filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.15));
+}
+
+.huvudrubrik {
+    color: var(--color-primary);
+    font-size: var(--text-xl);
+    line-height: 1.35;
+    font-weight: 700;
+}
+
+.underrubrik {
+    background: var(--color-background-subtle);
+    padding: var(--space-md);
+    font-size: var(--text-base);
+    line-height: 1.375;
+    max-width: 100%;
+}
+
+/* Ingredienser & instruktioner */
+.ingredienser,
+.instruktioner {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+ul, ol {
+    font-size: var(--text-base);
+    line-height: 2;
+    padding-left: 20px;
+    margin-top: var(--space-lg)
+}
+
+/* Galleri */
+.gallery-section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    margin-top: var(--space-lg);
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    gap: var(--space-md);
+    min-width: 100%;
+}
+
+.gallery-item {
+    height: 467px;
+    overflow: hidden;
+    background-color: var(--color-placeholder);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ================================
+   MEDIA QUERIES
+   ================================ */
+
+@media (max-width: 768px) {
+    .receptkort {
+        padding: var(--space-md);
+    }
+}
